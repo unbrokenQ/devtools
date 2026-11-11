@@ -4,7 +4,12 @@ import typography from "@tailwindcss/typography";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -15,6 +20,8 @@ export default {
       },
     },
     extend: {
+      borderWidth: { DEFAULT: "var(--border-width)" },
+      ringWidth: { DEFAULT: "var(--ring-width)" },
       // One role scale for the whole app, built on the 13px macOS body size.
       // Overriding the Tailwind steps keeps every tool on the same ramp.
       fontSize: {
@@ -28,8 +35,8 @@ export default {
         "3xl": ["26px", { lineHeight: "32px", letterSpacing: "-0.02em" }],
       },
       fontFamily: {
-        sans: ['var(--font-ui)'],
-        mono: ['var(--font-code)'],
+        sans: ["var(--font-ui)"],
+        mono: ["var(--font-code)"],
       },
       colors: {
         border: "hsl(var(--border))",
