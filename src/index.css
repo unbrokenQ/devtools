@@ -16,8 +16,8 @@
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 40%;
-    --accent: 0 0% 92%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 220 14% 93%;
+    --accent-foreground: 220 15% 12%;
     --destructive: 0 74% 40%;
     --destructive-foreground: 0 0% 100%;
     --success: 142 76% 24%;
@@ -26,20 +26,23 @@
     --warning-foreground: 0 0% 100%;
     --info: 221 83% 45%;
     --info-foreground: 0 0% 100%;
-    --border: 0 0% 88%;
-    --input: 0 0% 55%;
+    --border: 220 13% 91%;
+    --input: 220 10% 80%;
+    --input-strong: 220 10% 58%;
     --ring: 0 0% 9%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 96%;
     --sidebar-foreground: 0 0% 9%;
     --sidebar-primary: 0 0% 9%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent: 220 14% 90%;
+
     --sidebar-accent-foreground: 0 0% 9%;
     --sidebar-border: 0 0% 88%;
     --sidebar-ring: 0 0% 9%;
     --chrome-muted-foreground: 0 0% 25%;
-    --chrome-input-border: 0 0% 45%;
+    --chrome-input-border: 220 10% 82%;
+
     --surface-editor: #fff;
     --surface-chrome: #f2f2f2;
     --surface-sidebar: #ededed;
@@ -58,9 +61,16 @@
       ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Cascadia Mono",
       "DejaVu Sans Mono", "Liberation Mono", monospace;
 
-    --border-width: 2px;
-    --ring-width: 2px;
-    --ring-offset: 2px;
+    --border-width: 1px;
+    --ring-width: 3px;
+    --ring-offset: 0px;
+
+    --shadow-xs: 0 1px 2px 0 hsl(220 20% 20% / 0.05);
+    --shadow-sm:
+      0 1px 2px hsl(220 20% 20% / 0.06), 0 1px 3px hsl(220 20% 20% / 0.08);
+    --shadow-md:
+      0 4px 12px -2px hsl(220 20% 20% / 0.1),
+      0 2px 4px -2px hsl(220 20% 20% / 0.06);
   }
 
   .dark {
@@ -84,7 +94,7 @@
     --success-foreground: 0 0% 4%;
     --warning: 48 96% 53%;
     --warning-foreground: 0 0% 4%;
-    --info: 213 94% 72%;
+    --input: 0 0% 28%;
     --info-foreground: 0 0% 4%;
     --border: 0 0% 17%;
     --input: 0 0% 48%;
@@ -97,8 +107,11 @@
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 17%;
     --sidebar-ring: 0 0% 98%;
-    --chrome-muted-foreground: 0 0% 80%;
-    --chrome-input-border: 0 0% 58%;
+    --chrome-muted-foreground: 220 8% 32%;
+
+    --input-strong: 0 0% 48%;
+    --chrome-input-border: 0 0% 30%;
+
     --surface-editor: #0a0a0a;
     --surface-chrome: #141414;
     --surface-sidebar: #1c1c1c;
